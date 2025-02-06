@@ -27,5 +27,9 @@ Route::get('/pocetna', function() {
     return view('pocetna');
 
 });
+Route::get('/test', function() {
+    return view('test');
+
+});
 
 require __DIR__.'/auth.php';

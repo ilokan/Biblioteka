@@ -4,7 +4,7 @@
 @import "tailwindcss";
 @source "../views";
 
-#naslov{
+/* #naslov{
   box-shadow:
   -0.3px 0px 2.2px rgba(0, 0, 0, 0.013),
   -2.2px 0px 5.3px rgba(0, 0, 0, 0.018),
@@ -14,3 +14,4 @@
   88px 0px 80px rgba(0, 0, 0, 0.05)
 ;
 }
+shadow-[0_10px_20px_rgba(0,_0,_0,_0.7)] */
