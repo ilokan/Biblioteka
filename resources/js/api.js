@@ -10,6 +10,14 @@ dugme.addEventListener("click",brojanje =>{
     console.log(brojac);
 })
 dugme.addEventListener("click",dajKnjige);
+var enter = document.querySelector("#unos")
+enter.addEventListener("keydown",(e) => {
+    if(e.key === "Enter"){
+        console.log('enter');
+        dugme.click();
+    }
+});
+
 
 if(brojac>5){
     dugme.removeEventListener("click",dajKnjige);
@@ -19,12 +27,13 @@ var naslov="";
 var autor="";
 var slika="";
 var broj="";
+var x="";
 
 // Funkcija koja ubacuje podatke o knjigama iz Open Library
 async function dajKnjige(){
     try{
-        const pretraga = document.querySelector("#unos").value.trim();
-        const response = await fetch(`http://openlibrary.org/search.json?q=${pretraga}`);
+        var unos = document.querySelector("#unos").value.trim();
+        const response = await fetch(`http://openlibrary.org/search.json?q=${unos}`);
         const data = await response.json();
         naslov = data.docs[0].title;
         document.querySelector("#naslov"+brojac).innerHTML=naslov;
@@ -34,7 +43,8 @@ async function dajKnjige(){
         slika.src = 'http://covers.openlibrary.org/b/id/'+data.docs[0].cover_i+'-M.jpg';
         slika.style.display = "block";
         slika.style.margin = "0 auto";
-        document.querySelector("#x"+brojac).innerHTML="&#9747;";
+        x= document.querySelector("#x"+brojac);
+        x.style.display="block";
         broj=document.querySelector("#broj"+brojac);
         console.log("razmak");
         broj.style.display="none";
@@ -45,7 +55,7 @@ async function dajKnjige(){
         console.error(error);
     }
 }
-// Uklanjanje X
+// Uklanjanje informacija pomocu X
 document.addEventListener("click", (e)=>{
     let ukloni = e.target.id;
     if(ukloni === "x1" || ukloni === "x2" || ukloni === "x3" || ukloni === "x4" || ukloni === "x5"){
