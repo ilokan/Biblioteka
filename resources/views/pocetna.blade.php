@@ -24,48 +24,48 @@
         <div class="flex gap-4 align-top">
         <div id="ispis1" class="w-64 h-[28rem] relative align-top grid grid-cols-1 m-0 border rounded-xl bg-neutral-200">
             <div id="broj1" class="grid grid-cols-1 justify-self-center self-center justify-items-center margin-auto absolute">
-                <p class="text-2xl font-medium opacity-50">Knjiga</p>
-                <p class="text-9xl font-medium opacity-50">1</p>
+                <span class="text-2xl font-medium opacity-50">Knjiga</span>
+                <span class="text-9xl font-medium opacity-50">1</span>
             </div>
-            <h1 class="text-xl justify-self-center self-top absolute top-[2rem]" id="naslov1"></h1>
+            <h1 class="font-bold text-xl justify-self-center self-top absolute top-[2rem]" id="naslov1"></h1>
             <p id="autor1" class="justify-self-center self-top absolute top-[4rem]"></p>
-            <img class="absolute top-[6rem]  justify-self-center" id="slika1" src="" alt="Slika" style="display:none"><button id="x1" class="absolute top-2 right-4 hidden">&#9747</button>  
+            <img class="absolute top-[7rem]  justify-self-center" style="display:none" id="slika1" src="" alt="Slika"><button id="x1" class="absolute top-2 right-4 hidden">&#9747</button>  
         </div>
         <div id="ispis2" class="w-64 h-[28rem] relative align-top  grid grid-cols-1 m-0 border rounded-xl bg-neutral-200">
             <div id="broj2" class="grid grid-cols-1 justify-self-center self-center justify-items-center margin-auto absolute">
-                <p class="text-2xl font-medium opacity-50">Knjiga</p>
-                <p class="text-9xl font-medium opacity-50">2</p>
+                <span class="text-2xl font-medium opacity-50">Knjiga</span>
+                <span class="text-9xl font-medium opacity-50">2</span>
             </div>            
-            <h1 class="text-xl justify-self-center self-top absolute top-[2rem]" id="naslov2"></h1>
+            <h1 class="font-bold text-xl justify-self-center self-top absolute top-[2rem]" id="naslov2"></h1>
             <p id="autor2" class="justify-self-center self-top absolute top-[4rem]"></p>
-            <img class="absolute top-[6rem]  justify-self-center" id="slika2" src="" alt="Slika" style="display:none"><button id="x2" class="absolute top-2 right-4 hidden">&#9747</button> 
+            <img class="absolute top-[7rem]  justify-self-center" style="display:none" id="slika2" src="" alt="Slika"><button id="x2" class="absolute top-2 right-4 hidden">&#9747</button> 
         </div>
         <div id="ispis3" class="w-64 h-[28rem] relative align-top  grid grid-cols-1 m-0 border rounded-xl bg-neutral-200">
             <div id="broj3" class="grid grid-cols-1 justify-self-center self-center justify-items-center margin-auto absolute">
-                <p class="text-2xl font-medium opacity-50">Knjiga</p>
-                <p class="text-9xl font-medium opacity-50">3</p>
+                <span class="text-2xl font-medium opacity-50">Knjiga</span>
+                <span class="text-9xl font-medium opacity-50">3</span>
             </div>            
-            <h1 class="text-xl justify-self-center self-top absolute top-[2rem]" id="naslov3"></h1>
+            <h1 class="font-bold text-xl justify-self-center self-top absolute top-[2rem]" id="naslov3"></h1>
             <p id="autor3" class="justify-self-center self-top absolute top-[4rem]"></p>
-            <img class="absolute top-[6rem]  justify-self-center" id="slika3" src="" alt="Slika" style="display:none"><button id="x3" class="absolute top-2 right-4 hidden">&#9747</button> 
+            <img class="absolute top-[7rem]  justify-self-center" style="display:none" id="slika3" src="" alt="Slika"><button id="x3" class="absolute top-2 right-4 hidden">&#9747</button> 
         </div>
         <div id="ispis4" class="w-64 h-[28rem] relative align-top  grid grid-cols-1 m-0 border rounded-xl bg-neutral-200">
             <div id="broj4" class="grid grid-cols-1 justify-self-center self-center justify-items-center margin-auto absolute">
-                <p class="text-2xl font-medium opacity-50">Knjiga</p>
-                <p class="text-9xl font-medium opacity-50">4</p>
+                <span class="text-2xl font-medium opacity-50">Knjiga</span>
+                <span class="text-9xl font-medium opacity-50">4</span>
             </div>            
-            <h1 class="text-xl justify-self-center self-top absolute top-[2rem]" id="naslov4"></h1>
+            <h1 class="font-bold text-xl justify-self-center self-top absolute top-[2rem]" id="naslov4"></h1>
             <p id="autor4" class="justify-self-center self-top absolute top-[4rem]"></p>
-            <img class="absolute top-[6rem]  justify-self-center" id="slika4" src="" alt="Slika" style="display:none"><button id="x4" class="absolute top-2 right-4 hidden">&#9747</button>
+            <img class="absolute top-[7rem]  justify-self-center" style="display:none" id="slika4" src="" alt="Slika"><button id="x4" class="absolute top-2 right-4 hidden">&#9747</button>
         </div>
         <div id="ispis5" class="w-64 h-[28rem] relative align-top  grid grid-cols-1 m-0 border rounded-xl bg-neutral-200">
             <div id="broj5" class="grid grid-cols-1 justify-self-center self-center justify-items-center margin-auto absolute">
-                <p class="text-2xl font-medium opacity-50">Knjiga</p>
-                <p class="text-9xl font-medium opacity-50">5</p>
+                <span class="text-2xl font-medium opacity-50">Knjiga</span>
+                <span class="text-9xl font-medium opacity-50">5</span>
             </div>            
-            <h1 class="text-xl justify-self-center self-top absolute top-[2rem]" id="naslov5"></h1>
+            <h1 class="font-bold text-xl justify-self-center self-top absolute top-[2rem]" id="naslov5"></h1>
             <p id="autor5" class="justify-self-center self-top absolute top-[4rem]"></p>
-            <img class="absolute top-[6rem]  justify-self-center" id="slika5" src="" alt="Slika" style="display:none"><button id="x5" class="absolute top-2 right-4 hidden">&#9747</button> 
+            <img class="absolute top-[7rem]  justify-self-center" style="display:none" id="slika5" src="" alt="Slika"><button id="x5" class="absolute top-2 right-4 hidden">&#9747</button> 
         </div>
         </div>
         </div>

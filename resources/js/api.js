@@ -6,9 +6,14 @@ var dugme = document.querySelector("#dugme");
 var brojac=0;
 
 dugme.addEventListener("click",brojanje =>{
+    if(brojac<5){
     brojac +=1;
     console.log(brojac);
+    
+    }        
 })
+
+
 dugme.addEventListener("click",dajKnjige);
 var enter = document.querySelector("#unos")
 enter.addEventListener("keydown",(e) => {
@@ -17,12 +22,9 @@ enter.addEventListener("keydown",(e) => {
         dugme.click();
     }
 });
+    
 
 
-if(brojac>5){
-    dugme.removeEventListener("click",dajKnjige);
-    dugme.removeEventListener("click",brojanje);
-}
 var naslov="";
 var autor="";
 var slika="";
@@ -33,8 +35,10 @@ var x="";
 async function dajKnjige(){
     try{
         var unos = document.querySelector("#unos").value.trim();
-        const response = await fetch(`http://openlibrary.org/search.json?q=${unos}`);
-        const data = await response.json();
+        var response = await fetch(`http://openlibrary.org/search.json?q=${unos}`);
+        var data = await response.json();
+        broj=document.querySelector("#broj"+brojac);
+        broj.style.display="none";
         naslov = data.docs[0].title;
         document.querySelector("#naslov"+brojac).innerHTML=naslov;
         autor=data.docs[0].author_name;
@@ -45,9 +49,7 @@ async function dajKnjige(){
         slika.style.margin = "0 auto";
         x= document.querySelector("#x"+brojac);
         x.style.display="block";
-        broj=document.querySelector("#broj"+brojac);
         console.log("razmak");
-        broj.style.display="none";
   
       
     }
@@ -64,9 +66,17 @@ document.addEventListener("click", (e)=>{
         $(e.target.closest("div")).find("p").html("");
         $(e.target.closest("div")).find("img").css("display","none");
         $(e.target.closest("div")).find("button").css("display","none");
+        broj.style.display = "grid";
+        var uklonjeno = ukloni.split("");
+        brojac = parseInt(uklonjeno[1])-1;
+        console.log(brojac);
+     
+
+
 
     }
 
 });
+
 
 
