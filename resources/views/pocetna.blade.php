@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/resources/css/app.css">
-    <script src="/resources/js/api.js"></script>
+    @vite('resources/css/app.css')
     <title>Biblioteka</title>    
 </head>
 <body> 
@@ -75,5 +74,6 @@
         <p class="self-center">Made by me </p><button href="/">Back to top</button>
     </footer>
     </div>
+    @vite('resources/js/api.js')
 </body> 
 </html>
